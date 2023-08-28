@@ -14,6 +14,7 @@ SUB_MAKEFILE_DIR = ./library-makefiles
 
 CC = arm-none-eabi-gcc
 LD = arm-none-eabi-gcc
+SIZE = arm-none-eabi-size
 MAKE = make
 
 
@@ -92,6 +93,7 @@ $(OUTPUT_DIR)/$(IMAGE): ./mps2_m3.ld $(OBJS_OUTPUT) Makefile FORCE_MBED_TLS_ARCH
 	$(LD) $(OBJS_OUTPUT) $(MBED_TLS_LIB) $(CFLAGS) -Xlinker --gc-sections -Xlinker -T ./mps2_m3.ld \
 		-Xlinker -Map=$(OUTPUT_DIR)/RTOSDemo.map -specs=nano.specs \
 		-specs=nosys.specs -specs=rdimon.specs -o $(OUTPUT_DIR)/$(IMAGE)
+	$(SIZE) $(OUTPUT_DIR)/$(IMAGE)		
 
 $(DEP_OUTPUT):
 include $(wildcard $(DEP_OUTPUT))

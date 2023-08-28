@@ -22,3 +22,6 @@
 [submodule "lib/AWS/shadow"]
 	path = lib/AWS/shadow
 	url = https://github.com/aws/Device-Shadow-for-AWS-IoT-embedded-sdk
+[submodule "lib/FreeRTOS/Lab-Project-FreeRTOS-Plus-MQTT"]
+	path = lib/FreeRTOS/Lab-Project-FreeRTOS-Plus-MQTT
+	url = https://github.com/RichardBarry/Lab-Project-FreeRTOS-Plus-MQTT.git

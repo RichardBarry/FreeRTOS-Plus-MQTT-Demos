@@ -399,7 +399,7 @@ void vStartMQTTAgentDemo( void )
      * itself into the MQTT agent task. */
     xTaskCreate( prvConnectAndCreateDemoTasks, /* Function that implements the task. */
                  "ConnectManager",             /* Text name for the task - only used for debugging. */
-                 democonfigDEMO_STACKSIZE,     /* Size of stack (in words, not bytes) to allocate for the task. */
+                 democonfigDEMO_STACK_SIZE,     /* Size of stack (in words, not bytes) to allocate for the task. */
                  NULL,                         /* Optional - task parameter - not used in this case. */
                  tskIDLE_PRIORITY + 1,         /* Task priority, must be between 0 and configMAX_PRIORITIES - 1. */
                  NULL );                       /* Optional - used to pass out a handle to the created task. */

@@ -230,7 +230,7 @@ extern UBaseType_t uxRand();
 #define ipconfigSOCKET_HAS_USER_WAKE_CALLBACK          ( 1 )
 
 /* USE_WIN: Let TCP use windowing mechanism. */
-#define ipconfigUSE_TCP_WIN                            ( 1 )
+#define ipconfigUSE_TCP_WIN                            ( 0 )
 
 /* The MTU is the maximum number of bytes the payload of a network frame can
  * contain.  For normal Ethernet V2 frames the maximum MTU is 1500.  Setting a
@@ -307,6 +307,8 @@ extern UBaseType_t uxRand();
 #define ipconfigTCP_KEEP_ALIVE_INTERVAL     ( 20 ) /* in seconds */
 
 #define portINLINE                          __inline
+
+
 
 /* Include the tcp_netstat utility. */
 #include "tcp_netstat.h"

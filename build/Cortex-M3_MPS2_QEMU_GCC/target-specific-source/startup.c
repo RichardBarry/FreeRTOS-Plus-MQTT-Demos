@@ -135,6 +135,7 @@ void prvGetRegistersFromStack( uint32_t *pulFaultStackAddress )
     psr = pulFaultStackAddress[ 7 ];
 
     printf( "Fault" );
+    fflush( stdout );
 
     /* When the following line is hit, the variables contain the register values. */
     for( ;; );

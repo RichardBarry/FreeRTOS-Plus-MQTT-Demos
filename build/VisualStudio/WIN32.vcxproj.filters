@@ -369,6 +369,9 @@
     <ClCompile Include="..\..\lib\AWS\ota\source\dependency\coreJSON\source\core_json.c">
       <Filter>Lib\FreeRTOS\coreJSON</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\lib\FreeRTOS\freertos-plus-tcp\portable\BufferManagement\BufferAllocation_1.c">
+      <Filter>Lib\FreeRTOS\FreeRTOS-Plus-TCP\portable\BufferManagement</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\lib\FreeRTOS\freertos-kernel\portable\MSVC-MingW\portmacro.h">
